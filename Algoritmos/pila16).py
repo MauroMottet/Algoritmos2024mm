@@ -11,6 +11,7 @@ def intersección (pila1,pila2):
     for element in reversed(list2):
         pila2.push(element)
     intersección_pilas = list(set(list1) & set(list2))
+    #no sabia bien como hacerlo asi que busque en internet una ayuda para como encontrar las intersecciónes
     return intersección_pilas
 
 episode_v_characters = ["Luke Skywalker", "Darth Vader", "Leia Organa", "Han Solo", "Chewbacca", "Yoda"]
