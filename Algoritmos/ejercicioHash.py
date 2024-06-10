@@ -35,10 +35,17 @@ def mostrar_pokemon_tipo (tabla , tipos):
         if key_tipo in tabla:
             resultado.extend(tabla[key_tipo])
     return resultado
-insertar_pokemon(123,"Garchomp",["Dragon","Tierra"],30)
+insertar_pokemon(349,"Garchomp",["Dragon","Tierra"],30)
 insertar_pokemon(49,"Charizard",["Fuego","Volador"],10)
 insertar_pokemon(10,"Pidgey",["Volador"],28)
 insertar_pokemon(2,"Squiertle",["Agua"],38)
+insertar_pokemon(123, "Scyther", ["Bicho", "Volador"], 30)
+insertar_pokemon(4, "Charmander", ["Fuego"], 10)
+insertar_pokemon(25, "Pikachu", ["Eléctrico"], 15)
+insertar_pokemon(150, "Mewtwo", ["Psíquico"], 100)
+insertar_pokemon(7, "Squirtle", ["Agua"], 5)
+insertar_pokemon(9, "Blastoise", ["Agua"], 35)
+insertar_pokemon(8, "Wartortle", ["Agua"], 25)
 
 print("Pokemons que terminan en 3, 7 y 9:")
 for pokemon in mostrar_pokemon_numero(tabla_numero,[3, 7, 9]):
@@ -50,4 +57,3 @@ print("Pokemon de tipo acero, fuego , hielo , electrico , hielo")
 for pokemon in mostrar_pokemon_tipo(tabla_tipo,["Acero","Fuego","Electrico","Hielo"]):
     print(pokemon)
 
-print(tabla_tipo)
